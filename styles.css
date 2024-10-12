@@ -6,13 +6,33 @@ body {
   color: #fff;
 }
 
+/* -- BARRA NAV -- */
+
+.nav{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav-btn{
+  background-color: #111;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+}
+
 /* --PORTADA-- */
 
 .portada{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 150px;
+  gap: 120px;
 }
 
 .nombre {
@@ -227,7 +247,7 @@ body {
   }
   
   .cursor1, .cursor2 {
-    font-size: 440px;
+    font-size: 44px;
   }
 
   .my-work{
