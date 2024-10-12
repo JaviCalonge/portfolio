@@ -58,11 +58,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //MOVIMIENTO SUAVE PARA TRANSICIONES
+
+//De flecha a proyectos
 document
   .querySelector(".scroll-indicator")
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
     smoothScrollTo(document.querySelector(".proyectos-titulo"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+  });
+
+//De nav a proyectos
+document
+  .querySelector(".nav-btn-work")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+    smoothScrollTo(document.querySelector(".proyectos-titulo"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+  });
+
+//De nav a contacto
+document
+  .querySelector(".nav-btn-contacto")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+    smoothScrollTo(document.querySelector("#contacto"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
   });
 
 function smoothScrollTo(target, duration) {
