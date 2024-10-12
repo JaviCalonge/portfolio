@@ -62,7 +62,7 @@ document
   .querySelector(".scroll-indicator")
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    smoothScrollTo(document.querySelector("#web3"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+    smoothScrollTo(document.querySelector(".proyectos-titulo"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
   });
 
 function smoothScrollTo(target, duration) {

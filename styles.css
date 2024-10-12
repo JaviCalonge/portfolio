@@ -1,34 +1,37 @@
 body {
-  margin: 40px 60px 0 60px;
+  margin: 0 60px 0 60px;
+  padding: 0;
   font-family: "Montserrat";
   background-color: #111;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
 }
 
 /* --PORTADA-- */
 
+.portada{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 150px;
+}
+
 .nombre {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
-  margin-bottom: 200px;
 }
 
 .line1, .line2 {
-  font-size: 80px;
-  margin: 0;
+  font-size: 120px;
 }
 
 .line2{
-  margin-left: 40px;
+  margin-left: 120px;
 }
 
 .cursor1, .cursor2 {
   display: inline-block;
   font-weight: normal;
-  font-size: 80px;
+  font-size: 120px;
   line-height: 0.2;
   animation: blink 1.5s steps(1) infinite;
 }
@@ -45,22 +48,14 @@ body {
   }
 }
 
-/* --ENLACES TRABAJOS Y REDES SOCIALES-- */
-
-.enlaces-work-redes {
-  margin-top: 40px;
+.my-work{
   display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-.work{
-  display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
 .titulo-work {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
   margin: 0;
 }
@@ -88,44 +83,18 @@ body {
   }
 }
 
-.enlaces-titulo {
-  font-size: 30px;
-  font-weight: 100;
-  margin: 0;
-}
-
-.redes {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.redes2{
-  display: none;
-}
-
-.enlaces {
-  display: flex;
-  justify-content: space-between;
-}
-
-.link-redes {
-  color: #fff;
-  text-decoration: none;
-}
-
 /* --SECCION CON LOS PROYECTOS-- */
-
-.proyectos-titulo{
-  font-size: 30px;
-  font-weight: 100;
-  margin: 40px;
-}
 
 .proyectos-container{
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.proyectos-titulo{
+  font-size: 40px;
+  font-weight: 100;
+  margin: 180px 40px 40px 40px;
 }
 
 .proyecto-enlace{
@@ -140,7 +109,7 @@ body {
   border: 1px solid #fff;
   border-radius: 20px;
   height: 100px;
-  width: 25%;
+  width: 34%;
   display: flex;
   align-items: center;
   position: relative;
@@ -148,7 +117,7 @@ body {
 }
 
 .proyecto:hover{
-  width: 50%;
+  width: 80%;
   transition: 2s;
 }
 
@@ -180,7 +149,7 @@ body {
   }
   100% {
     opacity: 1;
-    margin-left: 480px;
+    margin-left: 650px;
   }
 }
 
@@ -188,7 +157,7 @@ body {
   font-size: 30px;
   font-weight: 100;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 200px 0 200px 0;
 }
 
 .enlace-more{
@@ -199,6 +168,33 @@ body {
 .titulo-more:hover {
   font-size: 40px;
   transition: 2s;
+}
+
+/* -- REDES SOCIALES -- */
+
+.enlaces-titulo {
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.redes-enlaces{
+  display: flex;
+  gap: 50px;
+  margin: 20px;
+}
+
+.link-redes {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* -- MEDIA QUERIES -- */
@@ -212,6 +208,7 @@ body {
   .portada{
     margin: 0;
     padding: 0;
+    gap: 70px;
   }
   
   .nombre {
@@ -233,25 +230,18 @@ body {
     font-size: 40px;
   }
 
-  .enlaces-work-redes{
+  .my-work{
     display: none;
   }
 
   .proyectos-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     align-items: center;
   }
 
-  .web3{
-    margin: 0;
-    padding: 0;
-  }
-
   .proyectos-titulo{
-    font-size: 26px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin: 100px 0 50px 0;
+    text-align: center;
   }
 
   .proyecto{
@@ -269,19 +259,32 @@ body {
     display: none;
   }
 
-  .web4{
-    margin: 0;
-    padding: 0;
-  }
-
   .titulo-more {
-    font-size: 25px;
+    font-size: 28px;
     margin: 40px;
+    margin: 100px 0 80px 0;
+    text-align: center;
   }
 
-  .redes2{
-    display: block;
+  .redes{
     margin: 20px 40px 40px 40px;
-    padding: 0;
+  }
+
+  .enlaces-titulo {
+    font-size: 30px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1400px) {
+  .proyecto{
+    transition: none;
+  }
+  .proyecto:hover{
+    width: 34%;
+    transition: none;
+  }
+  .descripcion{
+    display: none;
   }
 }
