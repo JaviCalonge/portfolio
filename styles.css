@@ -208,7 +208,7 @@ body {
   .portada{
     margin: 0;
     padding: 0;
-    gap: 70px;
+    gap: 20px;
   }
   
   .nombre {
@@ -218,7 +218,7 @@ body {
   }
   
   .line1, .line2 {
-    font-size: 40px;
+    font-size: 44px;
     margin-left: 30px;
   }
 
@@ -227,7 +227,7 @@ body {
   }
   
   .cursor1, .cursor2 {
-    font-size: 40px;
+    font-size: 440px;
   }
 
   .my-work{
@@ -239,7 +239,7 @@ body {
   }
 
   .proyectos-titulo{
-    font-size: 30px;
+    font-size: 24px;
     margin: 100px 0 50px 0;
     text-align: center;
   }
@@ -252,7 +252,7 @@ body {
   }
 
   .titulo-proyecto{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .descripcion{
@@ -260,7 +260,7 @@ body {
   }
 
   .titulo-more {
-    font-size: 28px;
+    font-size: 24px;
     margin: 40px;
     margin: 100px 0 80px 0;
     text-align: center;
@@ -271,8 +271,8 @@ body {
   }
 
   .enlaces-titulo {
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
   }
 }
 
