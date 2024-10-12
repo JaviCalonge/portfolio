@@ -103,6 +103,19 @@ body {
   }
 }
 
+/* -- SOBRE MÍ -- */
+
+.titulo-about{
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.parrafo{
+  font-size: 22px;
+  margin: 50px 300px 0 50px;
+}
+
 /* --SECCION CON LOS PROYECTOS-- */
 
 .proyectos-container{
