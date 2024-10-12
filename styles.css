@@ -225,6 +225,10 @@ body {
     gap: 0;
   }
 
+  .nav{
+    display: none;
+  }
+
   .portada{
     margin: 0;
     padding: 0;
