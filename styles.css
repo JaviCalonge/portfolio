@@ -9,7 +9,7 @@ body {
 /* -- BARRA NAV -- */
 
 .nav{
-  margin: 50px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -17,13 +17,19 @@ body {
 
 .nav-btn{
   background-color: #111;
-  color: #fff;
+  color: #444;
   font-size: 20px;
-  border: 1px solid #fff;
+  border: 2px solid #444;
   border-radius: 40px;
   height: 40px;
-  width: 180px;
+  width: 140px;
   cursor: pointer;
+}
+
+.nav-btn:hover{
+  color: #fff;
+  border: 2px solid #fff;
+  transition: 1.5s;
 }
 
 /* --PORTADA-- */
@@ -32,16 +38,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 120px;
+  gap: 100px;
 }
 
 .nombre {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 100;
 }
 
 .line1, .line2 {
-  font-size: 120px;
+  font-size: 140px;
+  margin: 0;
 }
 
 .line2{
@@ -51,7 +58,7 @@ body {
 .cursor1, .cursor2 {
   display: inline-block;
   font-weight: normal;
-  font-size: 120px;
+  font-size: 140px;
   line-height: 0.2;
   animation: blink 1.5s steps(1) infinite;
 }
@@ -72,18 +79,31 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  color: #444;
+  text-decoration: none;
+}
+
+.my-work:hover{
+color: #fff;
+transition: 1.5s;
+}
+
+.my-work:hover .arrow-down{
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transition: 1.5s;
 }
 
 .titulo-work {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 100;
   margin: 0;
 }
 
 .arrow-down {
-  width: 20px;
-  height: 20px;
-  border: solid white;
+  width: 18px;
+  height: 18px;
+  border: solid #444;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 5px;
@@ -191,20 +211,15 @@ body {
 }
 
 .titulo-more {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
   text-align: center;
-  margin: 200px 0 200px 0;
+  margin: 100px 0 200px 0;
 }
 
 .enlace-more{
   text-decoration: none;
   color: #fff;
-}
-
-.titulo-more:hover {
-  font-size: 40px;
-  transition: 2s;
 }
 
 /* -- REDES SOCIALES -- */
