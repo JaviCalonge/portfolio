@@ -113,7 +113,11 @@ body {
 
 .parrafo{
   font-size: 22px;
-  margin: 50px 300px 0 50px;
+  margin: 50px 400px 0 100px;
+}
+
+.curso{
+  color: #fff;
 }
 
 /* --SECCION CON LOS PROYECTOS-- */
@@ -230,6 +234,11 @@ body {
   text-decoration: none;
 }
 
+.arrow-redes{
+  width: 20px;
+  height: 20px;
+}
+
 /* -- MEDIA QUERIES -- */
 
 @media (max-width: 800px) {
@@ -267,6 +276,17 @@ body {
     font-size: 44px;
   }
 
+  .titulo-about{
+    font-size: 24px;
+    margin: 100px 0 50px 0;
+    text-align: center;
+  }
+  
+  .parrafo{
+    font-size: 16px;
+    margin: 0 40px 0 40px;
+  }
+
   .my-work{
     display: none;
   }
@@ -297,7 +317,7 @@ body {
   }
 
   .titulo-more {
-    font-size: 24px;
+    font-size: 20px;
     margin: 40px;
     margin: 100px 0 80px 0;
     text-align: center;
@@ -308,8 +328,17 @@ body {
   }
 
   .enlaces-titulo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
+  }
+
+  .link-redes {
+    font-size: 16px;
+  }
+
+  .arrow-redes{
+    width: 16px;
+    height: 16px;
   }
 }
 
