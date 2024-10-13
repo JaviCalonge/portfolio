@@ -346,6 +346,7 @@ body {
 
   .redes{
     margin: 20px 40px 40px 40px;
+    flex-direction: column;
   }
 
   .enlaces-titulo {
@@ -365,7 +366,12 @@ body {
   .email-titulo{
     font-size: 20px;
     text-align: center;
-    margin: 50px 0 0 10px;
+    margin: 50px 0 0 0px;
+}
+
+.email{
+  font-size: 18px;
+  margin: 20px 0 0 0;
 }
 }
 
