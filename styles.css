@@ -8,14 +8,22 @@ body {
 
 /* -- BARRA NAV -- */
 
-.nav{
+.nav {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 50px;
+  position: relative;
+  top: -100px; /* Inicialmente fuera de la vista */
+  width: 100%;
+  transition: top 1.2s ease; /* Animación suave */
 }
 
-.nav-btn{
+.nav.visible {
+  top: 0; /* Cuando se añada la clase 'visible', la nav aparecerá */
+}
+
+.nav-btn {
   background-color: #111;
   color: #444;
   font-size: 20px;
@@ -26,7 +34,7 @@ body {
   cursor: pointer;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
   color: #fff;
   border: 2px solid #fff;
   transition: 1.5s;
@@ -34,11 +42,11 @@ body {
 
 /* --PORTADA-- */
 
-.portada{
+.portada {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 100px;
+  gap: 120px;
 }
 
 .nombre {
@@ -51,7 +59,7 @@ body {
   margin: 0;
 }
 
-.line2{
+.line2 {
   margin-left: 120px;
 }
 
@@ -75,20 +83,26 @@ body {
   }
 }
 
-.my-work{
+.my-work {
   display: flex;
   justify-content: center;
   gap: 20px;
   color: #444;
   text-decoration: none;
+  opacity: 0;
+  transition: 3s;
 }
 
-.my-work:hover{
+.my-work.visible {
+   opacity: 1;
+}
+
+.my-work:hover {
 color: #fff;
 transition: 1.5s;
 }
 
-.my-work:hover .arrow-down{
+.my-work:hover .arrow-down {
   border: solid #fff;
   border-width: 0 3px 3px 0;
   transition: 1.5s;
@@ -128,12 +142,16 @@ transition: 1.5s;
 .titulo-about{
   font-size: 40px;
   font-weight: 100;
-  margin: 0;
+  margin: 44px 0 0 0;
 }
 
 .parrafo{
   font-size: 22px;
   margin: 50px 400px 0 100px;
+}
+
+.parrafo a{
+  color: #fff;
 }
 
 .curso{
@@ -145,7 +163,7 @@ transition: 1.5s;
 .proyectos-container{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 .proyectos-titulo{
@@ -165,12 +183,20 @@ transition: 1.5s;
 .proyecto{
   border: 1px solid #fff;
   border-radius: 20px;
-  height: 100px;
-  width: 34%;
+  height: 130px;
+  width: 40%;
   display: flex;
   align-items: center;
   position: relative;
   transition: width 2s;
+  opacity: 0;
+  transform: translateY(20px); /* Inicia un poco más abajo */
+  transition: opacity 2s ease-out, transform 1s ease-out; /* Transición suave */
+}
+
+.proyecto.visible {
+  opacity: 1;
+  transform: translateY(0); /* Vuelve a su posición original */
 }
 
 .proyecto:hover{
@@ -179,18 +205,14 @@ transition: 1.5s;
 }
 
 .titulo-proyecto{
+  font-size: 40px;
   margin-left: 20px;
-  transition: margin-left 2s;
-}
-
-.proyecto:hover .titulo-proyecto{
-  transition: 2s;
 }
 
 .descripcion{
   opacity: 0;
   margin-left: 100px;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
 }
 
@@ -212,9 +234,15 @@ transition: 1.5s;
 
 .titulo-more {
   font-size: 40px;
+  color: #444;
   font-weight: 100;
   text-align: center;
   margin: 100px 0 200px 0;
+  transition: 1.5s
+}
+
+.titulo-more:hover {
+  color: #fff;
 }
 
 .enlace-more{
