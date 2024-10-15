@@ -9,7 +9,7 @@ body {
 /* -- BARRA NAV -- */
 
 .nav {
-  margin-top: 5vh; /* Usando vh */
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
   gap: 5vw;
@@ -26,7 +26,7 @@ body {
 .nav-btn {
   background-color: #111;
   color: #444;
-  font-size: 1.35rem; /* Usando rem */
+  font-size: 1.35rem;
   border: 0.2rem solid #444;
   border-radius: 2rem;
   height: 5vh;
@@ -38,6 +38,37 @@ body {
   color: #fff;
   border: 0.2rem solid #fff;
   transition: 1.5s;
+}
+
+/* -- TRADUCCIONES -- */
+
+.traducir {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 4vw;
+  top: -20vh; /* Inicialmente fuera de la vista */
+  transition: top 1.2s ease; /* Animación suave */
+}
+
+.idioma {
+  margin-top: 2vh;
+  height: 2.7vh;
+  width: 2.1vw;
+  background-color: #111;
+  color: #444;
+  text-align: center;
+  border: 0.1rem solid #444;
+  padding: 0;
+}
+
+.active {
+  color: #fff;
+  border: 0.1rem solid #ffffffb1;
+}
+
+.traducir.visible {
+  top: 0;
 }
 
 /* --PORTADA-- */
@@ -157,19 +188,19 @@ body {
 
 /* --SECCION CON LOS PROYECTOS-- */
 
-.proyectos-container {
+.projects-container {
   display: flex;
   flex-direction: column;
   gap: 4vh;
 }
 
-.proyectos-titulo {
+.projects-titulo {
   font-size: 3rem;
   font-weight: 100;
   margin: 18vh 0 8vh 0;
 }
 
-.proyecto-enlace {
+.project-enlace {
   text-decoration: none;
   color: #fff;
   display: flex;
@@ -177,7 +208,7 @@ body {
   align-items: center;
 }
 
-.proyecto {
+.project {
   border: 0.1rem solid #fff;
   border-radius: 2rem;
   height: 14vh;
@@ -191,17 +222,17 @@ body {
   transition: opacity 2s ease-out, transform 1s ease-out; /* Transición suave */
 }
 
-.proyecto.visible {
+.project.visible {
   opacity: 1;
   transform: translateY(0); /* Vuelve a su posición original */
 }
 
-.proyecto:hover {
+.project:hover {
   width: 80%;
   transition: 2s;
 }
 
-.titulo-proyecto {
+.titulo-project {
   font-size: 2.4rem;
   margin-left: 2vw;
 }
@@ -212,7 +243,7 @@ body {
   position: absolute;
 }
 
-.proyecto:hover .descripcion {
+.project:hover .descripcion {
   animation: description 3s forwards;
 }
 
@@ -227,7 +258,7 @@ body {
   }
 }
 
-.titulo-more {
+.title-more {
   font-size: 2.8rem;
   color: #444;
   font-weight: 100;
@@ -236,7 +267,7 @@ body {
   transition: 1.5s;
 }
 
-.titulo-more:hover {
+.title-more:hover {
   color: #fff;
 }
 
@@ -285,7 +316,7 @@ body {
   margin: 0;
 }
 
-.email-titulo {
+.email-title {
   font-size: 2.5rem;
   font-weight: 100;
   margin: 0;
@@ -337,12 +368,12 @@ body {
     margin: 2vh 0vw 4vh 0;
   }
 
-  .proyectos-titulo{
+  .projects-titulo{
     font-size: 1.4rem;
     margin: 2vh 0vw 3vh 0;
   }
 
-  .proyecto{
+  .project{
     height: 8vh;
     width: 90%;
     transition: none;
@@ -350,7 +381,7 @@ body {
     margin: 0;
   }
 
-  .titulo-proyecto{
+  .titulo-project{
     font-size: 1.2rem;
   }
 
@@ -358,7 +389,7 @@ body {
     display: none;
   }
 
-  .titulo-more {
+  .title-more {
     color: #fff;
     font-size: 1.4rem;
     margin: 6vh 0vw 4vh 0;
@@ -386,7 +417,7 @@ body {
     height: 1.2rem;
   }
 
-  .email-titulo{
+  .email-title{
     font-size: 1.4rem;
     font-weight: 400;
     margin: 4vh 0vw 1vh 0;
@@ -450,17 +481,17 @@ body {
     margin: 0 40px 0 40px;
   }
 
-  .proyectos-titulo{
+  .projects-titulo{
     font-size: 2.2rem;
     margin: 18vh 0 4vh 0;
   }
 
-  .proyecto {
+  .project {
     height: 10vh;
     width: 90%;
   }
 
-  .titulo-proyecto{
+  .titulo-project{
     font-size: 1.5rem;
     margin-left: 6vw;
   }
@@ -469,7 +500,7 @@ body {
     display: none;
   }
 
-  .titulo-more {
+  .title-more {
     color: #fff;
     font-size: 2.2rem;
     margin: 10vh 0 8vh 0;
@@ -496,7 +527,7 @@ body {
     height: 1.4rem;
   }
 
-  .email-titulo{
+  .email-title{
     font-size: 2.2rem;
     margin: 6vh 0 0 0;
 }
@@ -556,17 +587,17 @@ body {
     margin: 0 40px 0 40px;
   }
 
-  .proyectos-titulo{
+  .projects-titulo{
     font-size: 2.2rem;
     margin: 18vh 0 4vh 0;
   }
 
-  .proyecto {
+  .project {
     height: 10vh;
     width: 90%;
   }
 
-  .titulo-proyecto{
+  .titulo-project{
     font-size: 1.5rem;
     margin-left: 6vw;
   }
@@ -575,7 +606,7 @@ body {
     display: none;
   }
 
-  .titulo-more {
+  .title-more {
     color: #fff;
     font-size: 2.2rem;
     margin: 10vh 0 8vh 0;
@@ -602,7 +633,7 @@ body {
     height: 1.4rem;
   }
 
-  .email-titulo{
+  .email-title{
     font-size: 2.2rem;
     margin: 6vh 0 0 0;
 }

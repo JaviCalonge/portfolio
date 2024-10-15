@@ -7,9 +7,11 @@ window.onbeforeunload = function () {
 window.addEventListener("load", () => {
   const nav = document.querySelector(".nav");
   const myWork = document.querySelector(".my-work");
+  const btnIdiomas = document.querySelector(".traducir");
   myWork.classList.add("visible");
   setTimeout(() => {
     nav.classList.add("visible"); // Añade la clase para activar la transición
+    btnIdiomas.classList.add("visible");
   }, 2000);
 });
 
@@ -72,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //De flecha a proyectos
 document.querySelector(".my-work").addEventListener("click", function (event) {
   event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-  smoothScrollTo(document.querySelector(".proyectos-titulo"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+  smoothScrollTo(document.querySelector(".projects-title"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
 });
 
 //De nav a sobre mí
@@ -88,7 +90,7 @@ document
   .querySelector(".nav-btn-work")
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    smoothScrollTo(document.querySelector(".proyectos-titulo"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+    smoothScrollTo(document.querySelector(".projects-title"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
   });
 
 //De nav a contacto
@@ -136,7 +138,7 @@ function smoothScrollTo(target, duration) {
 // EFECTO PARA MOSTRAR LOS PROYECTOS
 
 document.addEventListener("DOMContentLoaded", () => {
-  const proyectos = document.querySelectorAll(".proyecto");
+  const proyectos = document.querySelectorAll(".project");
 
   function checkVisibility() {
     proyectos.forEach((proyecto) => {
@@ -155,3 +157,89 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", checkVisibility); // Comprueba al redimensionar la ventana
   checkVisibility(); // Ejecuta la función al cargar la página
 });
+
+// Función para cargar el archivo JSON y cambiar el idioma
+const cargarTraducciones = async (idioma) => {
+  try {
+    const response = await fetch("./traducciones.json");
+    const traducciones = await response.json();
+    cambiarIdioma(traducciones, idioma);
+  } catch (error) {
+    console.error("Error al cargar el archivo de traducciones:", error);
+  }
+};
+
+// Función para aplicar los textos traducidos
+const cambiarIdioma = (traducciones, idioma) => {
+  document.getElementById("about-btn").innerHTML =
+    traducciones[idioma].aboutBtn;
+  document.getElementById("work-btn").innerHTML = traducciones[idioma].workBtn;
+  document.getElementById("contact-btn").innerHTML =
+    traducciones[idioma].contactBtn;
+  document.getElementById("text").innerHTML = traducciones[idioma].text;
+  document.getElementById("work-title").innerHTML =
+    traducciones[idioma].workTitle;
+  document.getElementById("about-title").innerHTML =
+    traducciones[idioma].aboutTitle;
+  document.getElementById("projects-title").innerHTML =
+    traducciones[idioma].projectsTitle;
+  document.getElementById("title-more").innerHTML =
+    traducciones[idioma].titleMore;
+  document.getElementById("email-title").innerHTML =
+    traducciones[idioma].emailTitle;
+    document.getElementById("open-work").innerHTML =
+    traducciones[idioma].openWork;
+
+  const btnEs = document.getElementById("es");
+  const btnEn = document.getElementById("en");
+  const btnCat = document.getElementById("cat");
+
+  btnEs.classList.remove("active");
+  btnEn.classList.remove("active");
+  btnCat.classList.remove("active");
+
+  if (idioma === "es") {
+    btnEs.classList.add("active");
+  } else if (idioma === "en") {
+    btnEn.classList.add("active");
+  } else if (idioma === "cat") {
+    btnCat.classList.add("active");
+  }
+
+  // Guardar el idioma seleccionado en localStorage
+  localStorage.setItem("idioma", idioma);
+};
+
+// Detectar idioma del navegador y cargar el idioma predeterminado
+const detectarIdiomaPredeterminado = () => {
+  let idioma = localStorage.getItem("idioma");
+
+  if (!idioma) {
+    const idiomaNavegador = navigator.language || navigator.userLanguage;
+    if (idiomaNavegador.startsWith("es")) {
+      idioma = "es";
+    } else if (idiomaNavegador.startsWith("en")) {
+      idioma = "en";
+    } else if (idiomaNavegador.startsWith("ca")) {
+      idioma = "cat";
+    } else {
+      idioma = "es";
+    }
+  }
+
+  cargarTraducciones(idioma);
+};
+
+// Eventos para los botones
+document
+  .getElementById("es")
+  .addEventListener("click", () => cargarTraducciones("es"));
+document
+  .getElementById("en")
+  .addEventListener("click", () => cargarTraducciones("en"));
+document
+  .getElementById("cat")
+  .addEventListener("click", () => cargarTraducciones("cat"));
+
+// Ejecutar al cargar la página
+window.onload = detectarIdiomaPredeterminado;

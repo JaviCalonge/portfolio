@@ -1,0 +1,38 @@
+{
+  "es": {
+    "aboutBtn": "Sobre mí",
+    "workBtn": "Mi trabajo",
+    "contactBtn": "Contacto",
+    "workTitle": "Conoce mi trabajo",
+    "aboutTitle": "Sobre mí",
+    "text": "En la universidad La Salle, Ramón Llull de Barcelona he podido consolidar todos mis conocimientos en programación, aprendiendo nuevas herramientas, enfocando los conociomientos al ámbito laboral y haciendo incapié en las buenas prácticas y la profesionalidad.<br><br>El <a href=\"https://www.salleurl.edu/es/estudios/curso-de-desarrollador-front-end-web\" target=\"_blank\" rel=\"noopener noreferrer\">curso presencial de desarrollador Front End</a>, de más de 5 meses, me ha servido para afianzar los conocimientos que de forma autodidacta había adquirido. Viendo muchos vídeos por internet, leyendo, practicando en casa.<br><br>En 2023 hice mis primeros cursos online de pago. Cursos que iban de los fundamentales hasta los conceptos más avanzados. Cursos como los de Traversy Media, aprendiendo <a href=\"https://www.traversymedia.com/modern-javascript-2-0\" target=\"_blank\" rel=\"noopener noreferrer\">Java Script desde el inicio</a> pasando por la manipulación del DOM, call stack, loops, callbacks, promises, async/await... Creando aplicaciones Full Stack con Webpack y Node.js/Express.<br><br>También cursé, en la misma plataforma, un curso de más de <a href=\"https://www.traversymedia.com/javascript-challeges\" target=\"_blank\" rel=\"noopener noreferrer\">70 ejercicios sobre los fundamentales de Java Script, estructura de datos y algorítmos</a>. Mejorando mis habilidades para solventar problemas y aprendiendo los conceptos más importantes de la programación.<br><br>Ahora domino herramientos como Html, Css, Java Script, Vue.js, Git, GitHub, Node.js, Bootstrap. Pero no voy a pararme aquí, ahora estoy aprendiendo PHP.",
+    "projectsTitle": "Algunos de mis proyectos",
+    "titleMore": "Tengo más que mostrar...",
+    "openWork": "Abierto a nuevos proyectos",
+    "emailTitle": "Escríbeme por email"
+  },
+  "en": {
+    "aboutBtn": "About me",
+    "workBtn": "My work",
+    "contactBtn": "Contact",
+    "workTitle": "Know my work",
+    "aboutTitle": "About me",
+    "text": "At La Salle Ramon Llull University in Barcelona I have been able to consolidate all my programming knowledge, learning new tools, focusing my knowledge on the workplace and emphasizing good practices and professionalism.<br><br>The <a href=\"https://www.salleurl.edu/es/estudios/curso-de-desarrollador-front-end-web\" target=\"_blank\" rel=\"noopener noreferrer\">in-person Front End developer course</a>, which lasted more than 5 months, has helped me to consolidate the knowledge that I had acquired on my own. Watching many videos on the internet, reading, practicing at home.<br><br>In 2023 I took my first paid online courses. Courses that ranged from the fundamentals to the most advanced concepts. Courses like those from Traversy Media, learning <a href=\"https://www.traversymedia.com/modern-javascript-2-0\" target=\"_blank\" rel=\"noopener noreferrer\">Java Script from the beginning</a>, going through DOM manipulation, call stack, loops, callbacks, promises, async/await... Creating Full Stack applications with Webpack and Node.js/Express.<br><br>I also took, on the same platform, a course with <a href=\"https://www.traversymedia.com/javascript-challeges\" target=\"_blank\" rel=\"noopener noreferrer\">more than 70 exercises on the fundamentals of Java Script, data structure and algorithms</a>. Improving my problem-solving skills and learning the most important concepts of programming.<br><br>I now master tools such as Html, Css, Java Script, Vue.js, Git, GitHub, Node.js, Bootstrap. But I´m not going to stop here, now I´m learning PHP.",
+    "projectsTitle": "Some of my projects",
+    "titleMore": "I have more to show...",
+    "openWork": "Open to new projects",
+    "emailTitle": "Contact me by email"
+  },
+  "cat": {
+    "aboutBtn": "Sobre mi",
+    "workBtn": "Treballs",
+    "contactBtn": "Contacte",
+    "workTitle": "Coneix la meva feina",
+    "aboutTitle": "Sobre mi",
+    "text": "A la universitat La Salle, Ramon Llull de Barcelona he pogut consolidar tots els meus coneixements en programació, aprenent noves eines, enfocant els coneixements a l´àmbit laboral i fent èmfasi en les bones pràctiques i la professionalitat.<br><br>El <a href=\"https://www.salleurl.edu/es/estudios/curso-de-desarrollador-front-end-web\" target=\"_blank\" rel=\"noopener noreferrer\">curs presencial de desenvolupador Front End</a>, de més de 5 mesos, m´ha servit per consolidar els coneixements que havia adquirit de manera autodidacta. Veient molts vídeos per internet, llegint, practicant a casa.<br><br>El 2023 vaig fer els meus primers cursos online de pagament. Cursos que anaven dels fonamentals fins als conceptes més avançats. Cursos com els de Traversy Media, aprenent <a href=\"https://www.traversymedia.com/modern-javascript-2-0\" target=\"_blank\" rel=\"noopener noreferrer\">Java Script des de l'inici</a> passant per la manipulació del DOM, call stack, loops, callbacks, promises, async/await... Creant aplicacions Full Stack amb Webpack i Node.js/Express.<br><br>També vaig cursar, a la mateixa plataforma, un curs de més de <a href=\"https://www.traversymedia.com/javascript-challeges\" target=\"_blank\" rel=\"noopener noreferrer\">70 exercicis sobre els fonamentals de Java Script, estructura de dades i algoritmes</a>. Millorant les meves habilitats per resoldre problemes i aprenent els conceptes més importants de la programació.<br><br>Ara domino ferraments com Html, Css, Java Script, Vue.js, Git, GitHub, Node.js, Bootstrap. Però no em pararé aquí, ara estic aprenent PHP.",
+    "projectsTitle": "Alguns dels meus projectes",
+    "titleMore": "Tinc més per mostrar...",
+    "openWork": "Obert a nous projectes",
+    "emailTitle": "Escriu-me per email"
+  }
+}

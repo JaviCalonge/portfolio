@@ -10,13 +10,20 @@
 </head>
 
 <body>
+
   <nav class="nav">
-    <a href=""><button class="nav-btn nav-btn-about">About me</button></a>
-    <a href="#proyectos-titulo"><button class="nav-btn nav-btn-work">My Work</button></a>
-    <a href="#contacto"><button class="nav-btn nav-btn-contacto">Contact</button></a>
+    <a href=""><button id="about-btn" class="nav-btn nav-btn-about"></button></a>
+    <a href="#projects-titulo"><button id="work-btn" class="nav-btn nav-btn-work"></button></a>
+    <a href="#contacto"><button id="contact-btn" class="nav-btn nav-btn-contacto"></button></a>
   </nav>
 
   <section class="portada">
+
+    <section class="traducir">
+      <button id="es" class="idioma">ES</button>
+      <button id="en" class="idioma">EN</button>
+      <button id="cat" class="idioma">CAT</button>
+    </section>
 
     <h2 class="nombre">JAVI CALONGE</h2>
 
@@ -29,7 +36,7 @@
 
     <article>
       <a class="my-work" href="#web3">
-        <h4 class="titulo-work">KNOW MY WORK</h4>
+        <h4 id="work-title" class="titulo-work"></h4>
         <span class="arrow-down"></span>
       </a>
     </article>
@@ -38,68 +45,56 @@
 
   <section class="about">
 
-    <h2 class="titulo-about">ABOUT ME</h2>
+    <h2 id="about-title" class="titulo-about"></h2>
 
-    <article class="parrafo">Enthusiast of new technologies and IT. For a long time I was teaching myself programming,
-      HTML, CSS, Java Script... with different online courses, the most notable being the Java Script course from <a
-        href="https://www.traversymedia.com/modern-javascript-2-0">Traversy Media</a>
-      , and its course for problem solving skills and dive into algorithms More than <a
-        href="https://www.traversymedia.com/javascript-challeges">70 Java Scipt
-        Challenges: Data Structures & Algorithms.</a> <br><br> This year I have trained at the Ramón
-      LLlul University of Barcelona, ​​in <a
-        href="https://www.salleurl.edu/es/estudios/curso-de-desarrollador-front-end-web">Front End programming,</a>
-      directing my knowledge towards the professional field
-      and learning new tools such as Vue.js, Git and GitHub.
+    <article id="text" class="parrafo"></article>
 
-    </article>
   </section>
 
+  <section class="projects-container">
 
+    <h2 id="projects-title" class="projects-titulo"></h2>
 
-  <section class="proyectos-container">
-
-    <h2 id="proyectos-titulo" class="proyectos-titulo">SOME OF MY PROJECTS</h2>
-
-    <article class="proyecto">
-      <a class="proyecto-enlace" href="https://random-ideas-api-fullstack.onrender.com/" rel="noopener noreferrer"
+    <article class="project">
+      <a class="project-enlace" href="https://random-ideas-api-fullstack.onrender.com/" rel="noopener noreferrer"
         target="_blank">
-        <h2 class="titulo-proyecto">Tablón de ideas</h2>
+        <h2 class="titulo-project">Tablón de ideas</h2>
         <p class="descripcion">Web Full stack para compartir ideas</p>
       </a>
     </article>
 
 
-    <article class="proyecto">
-      <a class="proyecto-enlace" href="https://javicalonge.github.io/Recipes-API/" rel="noopener noreferrer"
+    <article class="project">
+      <a class="project-enlace" href="https://javicalonge.github.io/Recipes-API/" rel="noopener noreferrer"
         target="_blank">
-        <h2 class="titulo-proyecto">Recipes API</h2>
+        <h2 class="titulo-project">Recipes API</h2>
         <p class="descripcion">Las mejores recetas de cocina</p>
       </a>
     </article>
 
 
-    <article class="proyecto">
-      <a class="proyecto-enlace" href="https://javicalonge.github.io/gym-shark/" rel="noopener noreferrer"
+    <article class="project">
+      <a class="project-enlace" href="https://javicalonge.github.io/gym-shark/" rel="noopener noreferrer"
         target="_blank">
-        <h2 class="titulo-proyecto">Gym Shark custom web</h2>
+        <h2 class="titulo-project">Gym Shark custom web</h2>
         <p class="descripcion">Réplica de la web de Gym Shark</p>
       </a>
     </article>
 
 
-    <article class="proyecto">
-      <a class="proyecto-enlace" href="https://javicalonge.github.io/Cocktails-API/" rel="noopener noreferrer"
+    <article class="project">
+      <a class="project-enlace" href="https://javicalonge.github.io/Cocktails-API/" rel="noopener noreferrer"
         target="_blank">
-        <h2 class="titulo-proyecto">Cocktails API</h2>
+        <h2 class="titulo-project">Cocktails API</h2>
         <p class="descripcion">Prepara los mejores cócteles</p>
       </a>
     </article>
 
 
-    <article class="proyecto">
-      <a class="proyecto-enlace" href="https://javicalonge.github.io/shopping-list/" rel="noopener noreferrer"
+    <article class="project">
+      <a class="project-enlace" href="https://javicalonge.github.io/shopping-list/" rel="noopener noreferrer"
         target="_blank">
-        <h2 class="titulo-proyecto">Shopping List</h2>
+        <h2 class="titulo-project">Shopping List</h2>
         <p class="descripcion">Haz la lista de la compra</p>
       </a>
     </article>
@@ -110,13 +105,13 @@
   <section class="more-to-show">
     <a class="enlace-more" href="https://github.com/JaviCalonge?tab=repositories" rel="noopener noreferrer"
       target="_blank">
-      <h2 class="titulo-more">I HAVE MORE TO SHOW...</h2>
+      <h2 id="title-more" class="title-more"></h2>
     </a>
   </section>
 
   <section id="contacto" class="redes">
     <article class="redes-enlaces">
-      <h3 class="enlaces-titulo">OPEN TO WORK</h3>
+      <h3 id="open-work" class="enlaces-titulo"></h3>
 
 
       <div class="enlaces">
@@ -134,7 +129,7 @@
     </article>
 
     <article class="contact-email">
-      <h2 class="email-titulo">CONTACT BY EMAIL</h2>
+      <h2 id="email-title" class="email-title"></h2>
       <a class="email" href="">javicalongem@gmail.com</a>
     </article>
 
