@@ -194,7 +194,7 @@ body {
   gap: 4vh;
 }
 
-.projects-titulo {
+.projects-title-class {
   font-size: 3rem;
   font-weight: 100;
   margin: 18vh 0 8vh 0;
@@ -368,7 +368,7 @@ body {
     margin: 2vh 0vw 4vh 0;
   }
 
-  .projects-titulo{
+  .projects-title-class{
     font-size: 1.4rem;
     margin: 2vh 0vw 3vh 0;
   }
@@ -481,7 +481,7 @@ body {
     margin: 0 40px 0 40px;
   }
 
-  .projects-titulo{
+  .projects-title-class{
     font-size: 2.2rem;
     margin: 18vh 0 4vh 0;
   }
@@ -587,7 +587,7 @@ body {
     margin: 0 40px 0 40px;
   }
 
-  .projects-titulo{
+  .projects-title-class{
     font-size: 2.2rem;
     margin: 18vh 0 4vh 0;
   }

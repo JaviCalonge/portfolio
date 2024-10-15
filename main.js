@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //De flecha a proyectos
 document.querySelector(".my-work").addEventListener("click", function (event) {
   event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-  smoothScrollTo(document.querySelector(".projects-title"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+  smoothScrollTo(document.querySelector(".projects-title-class"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
 });
 
 //De nav a sobre mí
@@ -90,7 +90,7 @@ document
   .querySelector(".nav-btn-work")
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    smoothScrollTo(document.querySelector(".projects-title"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+    smoothScrollTo(document.querySelector(".projects-title-class"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
   });
 
 //De nav a contacto
@@ -187,7 +187,7 @@ const cambiarIdioma = (traducciones, idioma) => {
     traducciones[idioma].titleMore;
   document.getElementById("email-title").innerHTML =
     traducciones[idioma].emailTitle;
-    document.getElementById("open-work").innerHTML =
+  document.getElementById("open-work").innerHTML =
     traducciones[idioma].openWork;
 
   const btnEs = document.getElementById("es");
