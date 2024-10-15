@@ -642,3 +642,55 @@ body {
   font-size: 1.4rem;
 }
 }
+
+
+/*  FOOTER  */
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.tools-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #fff;
+  height: 4vh;
+  width: 70vw;
+  overflow: hidden;
+}
+
+.tools-title {
+  display: flex;
+  align-items: center;
+  margin-right: 0.4vw;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  animation: move 30s linear infinite;
+}
+
+.tools-item {
+  font-size: 1.2em;
+}
+
+/* Hacemos que el contenedor de herramientas se mueva en conjunto */
+@keyframes move {
+  0% {
+    transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+  }
+  100% {
+    transform: translateX(-100%); /* Se desplaza completamente a la izquierda */
+  }
+}
+

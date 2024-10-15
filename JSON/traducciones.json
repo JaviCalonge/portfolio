@@ -9,7 +9,8 @@
     "projectsTitle": "Algunos de mis proyectos",
     "titleMore": "Tengo más que mostrar...",
     "openWork": "Abierto a nuevos proyectos",
-    "emailTitle": "Escríbeme por email"
+    "emailTitle": "Escríbeme por email",
+    "tools": "Herramientas:"
   },
   "en": {
     "aboutBtn": "About me",
@@ -21,7 +22,8 @@
     "projectsTitle": "Some of my projects",
     "titleMore": "I have more to show...",
     "openWork": "Open to new projects",
-    "emailTitle": "Contact me by email"
+    "emailTitle": "Contact me by email",
+    "tools": "Tools:"
   },
   "cat": {
     "aboutBtn": "Sobre mi",
@@ -33,6 +35,7 @@
     "projectsTitle": "Alguns dels meus projectes",
     "titleMore": "Tinc més per mostrar...",
     "openWork": "Obert a nous projectes",
-    "emailTitle": "Escriu-me per email"
+    "emailTitle": "Escriu-me per email",
+    "tools": "Eines:"
   }
 }

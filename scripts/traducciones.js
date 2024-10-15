@@ -30,6 +30,7 @@ const cambiarIdioma = (traducciones, idioma) => {
     traducciones[idioma].emailTitle;
   document.getElementById("open-work").innerHTML =
     traducciones[idioma].openWork;
+  document.getElementById("tools").innerHTML = traducciones[idioma].tools;
 
   const btnEs = document.getElementById("es");
   const btnEn = document.getElementById("en");
