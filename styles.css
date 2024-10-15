@@ -677,7 +677,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  animation: move 30s linear infinite;
+  animation: move 50s linear infinite;
 }
 
 .tools-item {
