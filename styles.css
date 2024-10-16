@@ -330,12 +330,71 @@ body {
 }
 
 
+/* -- FOOTER -- */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.tools-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #fff;
+  height: 4vh;
+  width: 60vw;
+  overflow: hidden;
+}
+
+.tools-title {
+  display: flex;
+  align-items: center;
+  margin-right: 0.4vw;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  animation: move 50s linear infinite;
+}
+
+.tools-item {
+  font-size: 1.2em;
+}
+
+/* Hacemos que el contenedor de herramientas se mueva en conjunto */
+@keyframes move {
+  0% {
+    transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+  }
+  100% {
+    transform: translateX(-100%); /* Se desplaza completamente a la izquierda */
+  }
+}
+
+
+
+
 /* -- MEDIA QUERIES -- */
 
-@media (min-width: 300px) and (max-width: 550px) {
+@media (max-width: 569px) {
  
   .nav{
     display: none;
+  }
+
+  .idioma {
+    height: 2.8vh;
+    width: 7vw;
   }
 
   .portada {
@@ -402,10 +461,14 @@ body {
     margin: 1vh;
   }
 
+  .redes-enlaces {
+    gap: 2vh;
+    margin: 4vh 0 0 0;
+  }
+
   .enlaces-titulo {
     font-size: 1.4rem;
     font-weight: 400;
-    margin: 2vh 0vw 4vh 0;
   }
 
   .link-redes {
@@ -420,7 +483,7 @@ body {
   .email-title{
     font-size: 1.4rem;
     font-weight: 400;
-    margin: 4vh 0vw 1vh 0;
+    margin: 7vh 0vw 1vh 0;
 }
 
 .email{
@@ -428,15 +491,25 @@ body {
     font-weight: 400;
     margin: 1vh 0vw 4vh 0;
 }
+
+.tools-container {
+  display: none;
+}
 }
 
 
-@media (min-width: 552px) and (max-width: 900px) {
+@media (min-width: 570px) and (max-width: 900px) {
   body {
     margin: 0 3vw;
   }
+
   .nav {
-    margin-top: 2vh;
+    margin: 2vh 0 6vh 0;
+  }
+
+  .idioma {
+    height: 2.8vh;
+    width: 5.5vw;
   }
 
   .nav-btn {
@@ -456,7 +529,7 @@ body {
   }
   
   .line1, .line2 {
-    font-size: 4.2rem;
+    font-size: 5.8rem;
   }
 
   .line2{
@@ -464,7 +537,7 @@ body {
   }
   
   .cursor1, .cursor2 {
-    font-size: 4.2rem;
+    font-size: 5.8rem;
   }
 
   .my-work{
@@ -508,13 +581,17 @@ body {
   }
 
   .redes{
-    margin: 20px 40px 40px 40px;
     flex-direction: column;
+    margin: 0;
+  }
+
+  .redes-enlaces {
+    gap: 2vh;
+    margin: 4vh 0 0 0;
   }
 
   .enlaces-titulo {
     font-size: 2.2rem;
-    margin: 6vh 0 2vh 0;
     font-weight: 400;
   }
 
@@ -534,163 +611,119 @@ body {
 
 .email{
   font-size: 1.4rem;
-}
-}
-
-@media (min-width: 901px) and (max-width: 1100px) {
-  body {
-    margin: 0 3vw;
-  }
-  .nav {
-    margin-top: 2vh;
-  }
-
-  .nav-btn {
-    color: #fff;
-    font-size: 1.2rem;
-    border: 2px solid #fff;
-    height: 4.5vh;
-    width: 18vw;
-  }
-
-  .portada{
-    gap: 6vh;
-  }
-  
-  .nombre {
-    font-size: 2rem;
-  }
-  
-  .line1, .line2 {
-    font-size: 8rem;
-  }
-
-  .line2{
-    margin-left: 6vh;
-  }
-  
-  .cursor1, .cursor2 {
-    font-size: 8rem;
-  }
-
-  .my-work{
-    display: none;
-  }
-
-  .titulo-about{
-    font-size: 2.2rem;
-    margin: 6vh 0 8vh 0;
-  }
-  
-  .parrafo{
-    font-size: 1.4rem;
-    margin: 0 40px 0 40px;
-  }
-
-  .projects-title-class{
-    font-size: 2.2rem;
-    margin: 18vh 0 4vh 0;
-  }
-
-  .project {
-    height: 10vh;
-    width: 90%;
-  }
-
-  .titulo-project{
-    font-size: 1.5rem;
-    margin-left: 6vw;
-  }
-
-  .descripcion{
-    display: none;
-  }
-
-  .title-more {
-    color: #fff;
-    font-size: 2.2rem;
-    margin: 10vh 0 8vh 0;
-    transition: none;
-  }
-
-  .redes{
-    margin: 20px 40px 40px 40px;
-    flex-direction: column;
-  }
-
-  .enlaces-titulo {
-    font-size: 2.2rem;
-    margin: 6vh 0 2vh 0;
-    font-weight: 400;
-  }
-
-  .link-redes {
-    font-size: 1.4rem;
-  }
-
-  .arrow-redes{
-    width: 1.4rem;
-    height: 1.4rem;
-  }
-
-  .email-title{
-    font-size: 2.2rem;
-    margin: 6vh 0 0 0;
-}
-
-.email{
-  font-size: 1.4rem;
-}
-}
-
-
-/*  FOOTER  */
-footer {
-  display: flex;
-  justify-content: center;
 }
 
 .tools-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid #fff;
-  height: 4vh;
-  width: 60vw;
-  overflow: hidden;
+  display: none;
+}
 }
 
-.tools-title {
-  display: flex;
-  align-items: center;
-  margin-right: 0.4vw;
-}
-
-.tools {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.move {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  animation: move 50s linear infinite;
-}
-
-.tools-item {
-  font-size: 1.2em;
-}
-
-/* Hacemos que el contenedor de herramientas se mueva en conjunto */
-@keyframes move {
-  0% {
-    transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+@media (min-width: 901px) and (max-width: 1258px) {
+  body {
+    margin: 0 3vw;
   }
-  100% {
-    transform: translateX(-100%); /* Se desplaza completamente a la izquierda */
+  .nav {
+    margin-top: 2vh;
   }
+
+  .nav-btn {
+    color: #fff;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    height: 4.5vh;
+    width: 18vw;
+  }
+
+  .portada{
+    gap: 6vh;
+  }
+  
+  .nombre {
+    font-size: 2rem;
+  }
+  
+  .line1, .line2 {
+    font-size: 8rem;
+  }
+
+  .line2{
+    margin-left: 6vh;
+  }
+  
+  .cursor1, .cursor2 {
+    font-size: 8rem;
+  }
+
+  .my-work{
+    display: none;
+  }
+
+  .titulo-about{
+    font-size: 2.2rem;
+    margin: 6vh 0 8vh 0;
+  }
+  
+  .parrafo{
+    font-size: 1.4rem;
+    margin: 0 40px 0 40px;
+  }
+
+  .projects-title-class{
+    font-size: 2.2rem;
+    margin: 18vh 0 4vh 0;
+  }
+
+  .project {
+    height: 10vh;
+    width: 90%;
+  }
+
+  .titulo-project{
+    font-size: 1.5rem;
+    margin-left: 6vw;
+  }
+
+  .descripcion{
+    display: none;
+  }
+
+  .title-more {
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 10vh 0 8vh 0;
+    transition: none;
+  }
+
+  .redes{
+    margin: 20px 40px 40px 40px;
+    flex-direction: column;
+  }
+
+  .enlaces-titulo {
+    font-size: 2.2rem;
+    margin: 6vh 0 2vh 0;
+    font-weight: 400;
+  }
+
+  .link-redes {
+    font-size: 1.4rem;
+  }
+
+  .arrow-redes{
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .email-title{
+    font-size: 2.2rem;
+    margin: 6vh 0 0 0;
 }
 
+.email{
+  font-size: 1.4rem;
+}
+
+.tools-container {
+  display: none;
+}
+}
