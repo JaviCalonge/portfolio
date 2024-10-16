@@ -656,7 +656,7 @@ footer {
   align-items: center;
   border-top: 1px solid #fff;
   height: 4vh;
-  width: 70vw;
+  width: 60vw;
   overflow: hidden;
 }
 
@@ -676,7 +676,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   animation: move 50s linear infinite;
 }
 
