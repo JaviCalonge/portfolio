@@ -191,15 +191,20 @@ const cambiarIdioma = (traducciones, idioma) => {
   document.getElementById("open-work").innerHTML =
     traducciones[idioma].openWork;
   document.getElementById("tools").innerHTML = traducciones[idioma].tools;
+};
 
+// Función para aplicar la clase "active" al botón correspondiente
+const aplicarClaseActive = (idioma) => {
   const btnEs = document.getElementById("es");
   const btnEn = document.getElementById("en");
   const btnCat = document.getElementById("cat");
 
+  // Quitar clase "active" de todos los botones
   btnEs.classList.remove("active");
   btnEn.classList.remove("active");
   btnCat.classList.remove("active");
 
+  // Añadir clase "active" al botón seleccionado
   if (idioma === "es") {
     btnEs.classList.add("active");
   } else if (idioma === "en") {
@@ -229,19 +234,26 @@ const detectarIdiomaPredeterminado = () => {
     }
   }
 
+  // Aplicar clase active y cargar las traducciones
+  aplicarClaseActive(idioma);
   cargarTraducciones(idioma);
 };
 
-// Eventos para los botones
-document
-  .getElementById("es")
-  .addEventListener("click", () => cargarTraducciones("es"));
-document
-  .getElementById("en")
-  .addEventListener("click", () => cargarTraducciones("en"));
-document
-  .getElementById("cat")
-  .addEventListener("click", () => cargarTraducciones("cat"));
+// Eventos para los botones de idioma
+document.getElementById("es").addEventListener("click", () => {
+  aplicarClaseActive("es"); // Aplicar clase active al hacer clic
+  cargarTraducciones("es"); // Cargar traducciones al hacer clic
+});
+
+document.getElementById("en").addEventListener("click", () => {
+  aplicarClaseActive("en"); // Aplicar clase active al hacer clic
+  cargarTraducciones("en"); // Cargar traducciones al hacer clic
+});
+
+document.getElementById("cat").addEventListener("click", () => {
+  aplicarClaseActive("cat"); // Aplicar clase active al hacer clic
+  cargarTraducciones("cat"); // Cargar traducciones al hacer clic
+});
 
 // Ejecutar al cargar la página
 window.onload = detectarIdiomaPredeterminado;
