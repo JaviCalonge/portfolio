@@ -1,10 +1,11 @@
 body {
-  margin: 0 5vw; /* Usando vw en lugar de px */
+  margin: 0 5vw;
   padding: 0;
   font-family: "Montserrat";
   background-color: #111;
   color: #fff;
 }
+
 
 /* -- BARRA NAV -- */
 
@@ -14,13 +15,13 @@ body {
   justify-content: center;
   gap: 5vw;
   position: relative;
-  top: -10vh; /* Inicialmente fuera de la vista */
+  top: -10vh;
   width: 100%;
-  transition: top 1.2s ease; /* Animación suave */
+  transition: top 1.2s ease;
 }
 
 .nav.visible {
-  top: 0; /* Cuando se añada la clase 'visible', la nav aparecerá */
+  top: 0;
 }
 
 .nav-btn {
@@ -40,6 +41,7 @@ body {
   transition: 1.5s;
 }
 
+
 /* -- TRADUCCIONES -- */
 
 .traducir {
@@ -47,8 +49,8 @@ body {
   flex-direction: column;
   position: absolute;
   right: 4vw;
-  top: -20vh; /* Inicialmente fuera de la vista */
-  transition: top 1.2s ease; /* Animación suave */
+  top: -20vh;
+  transition: top 1.2s ease;
 }
 
 .idioma {
@@ -71,6 +73,7 @@ body {
   top: 0;
 }
 
+
 /* --PORTADA-- */
 
 .portada {
@@ -86,7 +89,7 @@ body {
 }
 
 .line1, .line2 {
-  font-size: 8vw; /* Haciendo que el tamaño de la fuente se ajuste a la ventana */
+  font-size: 8vw;
   margin: 0;
 }
 
@@ -168,6 +171,7 @@ body {
   }
 }
 
+
 /* -- SOBRE MÍ -- */
 
 .titulo-about {
@@ -200,7 +204,7 @@ body {
   margin: 18vh 0 8vh 0;
 }
 
-.project-enlace {
+.project-link {
   text-decoration: none;
   color: #fff;
   display: flex;
@@ -218,13 +222,13 @@ body {
   position: relative;
   transition: width 2s;
   opacity: 0;
-  transform: translateY(2vh); /* Inicia un poco más abajo */
-  transition: opacity 2s ease-out, transform 1s ease-out; /* Transición suave */
+  transform: translateY(2vh);
+  transition: opacity 2s ease-out, transform 1s ease-out;
 }
 
 .project.visible {
   opacity: 1;
-  transform: translateY(0); /* Vuelve a su posición original */
+  transform: translateY(0); 
 }
 
 .project:hover {
@@ -232,18 +236,18 @@ body {
   transition: 2s;
 }
 
-.titulo-project {
+.title-project {
   font-size: 2.4rem;
   margin-left: 2vw;
 }
 
-.descripcion {
+.description {
   opacity: 0;
   font-size: 2rem;
   position: absolute;
 }
 
-.project:hover .descripcion {
+.project:hover .description {
   animation: description 3s forwards;
 }
 
@@ -271,14 +275,15 @@ body {
   color: #fff;
 }
 
-.enlace-more {
+.link-more {
   text-decoration: none;
   color: #fff;
 }
 
+
 /* -- REDES SOCIALES -- */
 
-.enlaces-titulo {
+.enlaces-title {
   font-size: 2.5rem;
   font-weight: 100;
   margin: 2vh 0 0 0;
@@ -291,7 +296,7 @@ body {
   margin: 5vh;
 }
 
-.redes-enlaces {
+.redes-links {
   display: flex;
   flex-direction: column;
   gap: 2vh;
@@ -353,7 +358,7 @@ footer {
   margin-right: 0.4vw;
 }
 
-.tools {
+.tools-items {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -367,21 +372,18 @@ footer {
   animation: move 50s linear infinite;
 }
 
-.tools-item {
+.tool-item {
   font-size: 1.2em;
 }
 
-/* Hacemos que el contenedor de herramientas se mueva en conjunto */
 @keyframes move {
   0% {
-    transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%); /* Se desplaza completamente a la izquierda */
+    transform: translateX(-100%);
   }
 }
-
-
 
 
 /* -- MEDIA QUERIES -- */
@@ -440,11 +442,11 @@ footer {
     margin: 0;
   }
 
-  .titulo-project{
+  .title-project{
     font-size: 1.2rem;
   }
 
-  .descripcion{
+  .description{
     display: none;
   }
 
@@ -461,12 +463,12 @@ footer {
     margin: 1vh;
   }
 
-  .redes-enlaces {
+  .redes-links {
     gap: 2vh;
     margin: 4vh 0 0 0;
   }
 
-  .enlaces-titulo {
+  .enlaces-title {
     font-size: 1.4rem;
     font-weight: 400;
   }
@@ -484,21 +486,22 @@ footer {
     font-size: 1.4rem;
     font-weight: 400;
     margin: 7vh 0vw 1vh 0;
-}
+  }
 
-.email{
+  .email{
     font-size: 1.2rem;
     font-weight: 400;
     margin: 1vh 0vw 4vh 0;
-}
+  }
 
-.tools-container {
-  display: none;
-}
+  .tools-container {
+    display: none;
+  }
 }
 
 
 @media (min-width: 570px) and (max-width: 900px) {
+
   body {
     margin: 0 3vw;
   }
@@ -564,12 +567,12 @@ footer {
     width: 90%;
   }
 
-  .titulo-project{
+  .title-project{
     font-size: 1.5rem;
     margin-left: 6vw;
   }
 
-  .descripcion{
+  .description{
     display: none;
   }
 
@@ -585,12 +588,12 @@ footer {
     margin: 3vh 6vh 6vh 6vh;
   }
 
-  .redes-enlaces {
+  .redes-links {
     gap: 2vh;
     margin: 4vh 0 0 0;
   }
 
-  .enlaces-titulo {
+  .enlaces-title {
     font-size: 2.2rem;
     font-weight: 400;
   }
@@ -619,6 +622,7 @@ footer {
 }
 
 @media (min-width: 901px) and (max-width: 1258px) {
+
   body {
     margin: 0 3vw;
   }
@@ -679,12 +683,12 @@ footer {
     width: 90%;
   }
 
-  .titulo-project{
+  .title-project{
     font-size: 1.5rem;
     margin-left: 6vw;
   }
 
-  .descripcion{
+  .description{
     display: none;
   }
 
@@ -700,7 +704,7 @@ footer {
     flex-direction: column;
   }
 
-  .enlaces-titulo {
+  .enlaces-title {
     font-size: 2.2rem;
     margin: 6vh 0 2vh 0;
     font-weight: 400;
@@ -718,7 +722,7 @@ footer {
   .email-title{
     font-size: 2.2rem;
     margin: 6vh 0 0 0;
-}
+  }
 
   .email{
     font-size: 1.4rem;

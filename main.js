@@ -89,10 +89,10 @@ document
 
 //De nav a contacto
 document
-  .querySelector(".nav-btn-contacto")
+  .querySelector(".nav-btn-contact")
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-    smoothScrollTo(document.querySelector("#contacto"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
+    smoothScrollTo(document.querySelector("#contact"), 2000); // Ajusta el tiempo en milisegundos (2000ms = 2 segundos)
   });
 
 //De flecha a proyectos
