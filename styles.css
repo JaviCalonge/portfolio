@@ -335,57 +335,6 @@ body {
 }
 
 
-/* -- FOOTER -- */
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.tools-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid #fff;
-  height: 4vh;
-  width: 60vw;
-  overflow: hidden;
-}
-
-.tools-title {
-  display: flex;
-  align-items: center;
-  margin-right: 0.4vw;
-}
-
-.tools-items {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.move {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  animation: move 50s linear infinite;
-}
-
-.tool-item {
-  font-size: 1.2em;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-
 /* -- MEDIA QUERIES -- */
 
 @media (max-width: 569px) {
