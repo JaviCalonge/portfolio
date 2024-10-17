@@ -582,7 +582,7 @@ footer {
 
   .redes{
     flex-direction: column;
-    margin: 0;
+    margin: 3vh 6vh 6vh 6vh;
   }
 
   .redes-enlaces {
@@ -607,21 +607,22 @@ footer {
   .email-title{
     font-size: 2.2rem;
     margin: 6vh 0 0 0;
-}
+  }
 
-.email{
-  font-size: 1.4rem;
-}
+  .email{
+    font-size: 1.4rem;
+  }
 
-.tools-container {
-  display: none;
-}
+  .tools-container {
+    display: none;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1258px) {
   body {
     margin: 0 3vw;
   }
+
   .nav {
     margin-top: 2vh;
   }
@@ -695,7 +696,7 @@ footer {
   }
 
   .redes{
-    margin: 20px 40px 40px 40px;
+    margin: 3vh 6vh 6vh 6vh;
     flex-direction: column;
   }
 
@@ -719,11 +720,11 @@ footer {
     margin: 6vh 0 0 0;
 }
 
-.email{
-  font-size: 1.4rem;
-}
+  .email{
+    font-size: 1.4rem;
+  }
 
-.tools-container {
-  display: none;
-}
+  .tools-container {
+    display: none;
+  }
 }
